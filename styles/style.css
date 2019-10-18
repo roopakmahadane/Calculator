@@ -1,14 +1,16 @@
 body {
   margin: 0;
   padding:0;
+
 }
 
 .main{
+  position: absolute;
   width:275px;
   height: 500px;
-
+  left:40% ;
 }
-.button, .equal{
+.button, .equal, .percentage{
   width: 68.75px;
   height:50px;
   padding:0;
@@ -23,8 +25,9 @@ body {
 
 .text {
   padding-top: 200px;
+  padding-bottom: 15px;
   width:276px;
-  font-size: 50px;
+  font-size: 60px;
   text-align: justify;
    text-align-last:right ;
    border:none;
