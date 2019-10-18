@@ -2,46 +2,51 @@
 <html>
 <head>
   <title>Calculator</title>
+  <link rel="stylesheet" href="./styles/style.css">
+
 </head>
 <body>
   <div class="main">
     <form>
-      <input name="view" readonly>
+      <input class="text" align="right"  readonly>
     </form>
-<div class="name">
+<div class="input">
  <table>
   <tr>
-    <td><input type="button " class="clear" value="C" ></td>
-    <td><input type="button mathBtn" class="" value="<"></td>
-    <td><input type="button mathBtn" value="%"></td>
-    <td><input type="button mathBtn" value="/"></td>
+    <td><input type="button" class="button  clear" value="C" ></td>
+    <td><input type="button" class = "button backSpace" value="<"></td>
+    <td><input type="button"  class = "button mathbtn" value="%"></td>
+    <td><input type="button" class="button mathbtn" value="/"></td>
   </tr>
   <tr>
     <td><input type="button" class="button digits" value="7" ></td>
     <td><input type="button" class="button digits" value="8"></td>
     <td><input type="button" class="button digits" value="9"></td>
-    <td><input type="button mathBtn" value="X"></td>
+    <td><input type="button" class="button mathbtn" value="X"></td>
   </tr>
   <tr>
     <td><input type="button" class="button digits" value="4" ></td>
     <td><input type="button" class="button digits" value="5"></td>
     <td><input type="button" class="button digits" value="6"></td>
-    <td><input type="button mathBtn" value="-"></td>
+    <td><input type="button" class="button mathbtn" value="+"></td>
   </tr>
   <tr>
-    <td><input type="button" class="button digits" class="button-digits" value="1" ></td>
+    <td><input type="button" class="button digits"  value="1" ></td>
     <td><input type="button" class="button digits" value="2"></td>
-    <td><input type="button" class="button digits" class="button-digits" value="3"></td>
-    <td><input type="button mathBtn" value="/"></td>
+    <td><input type="button" class="button digits" value="3"></td>
+    <td><input type="button" class="button mathbtn" value="-"></td>
   </tr>
     <tr>
-    <td><input type="button" value="" ></td>
-    <td><input type="button" class="button-digits" value="0"></td>
-    <td><input type="button" value="."></td>
-    <td><input type="button" value="="></td>
+    <td><input type="button" class = "button" value="" ></td>
+    <td><input type="button" class="button digits" value="0"></td>
+    <td><input type="button" class = "button" value="."></td>
+    <td><input type="button" class="equal" value="="></td>
   </tr>
 </table>
 </div>
   </div>
+
+
+   <script src="./app.js"></script>
 </body>
 </html>
