@@ -5,40 +5,34 @@ const equal= document.querySelector('.equal');
 const backspace = document.querySelector('.backspace');
 const percentage = document.querySelector('.percentage');
 
-function insert(e){
+const insert = (e) => {
   var num = e.currentTarget.value;
   if(num == 'x'){
     num = '*';
   }
-  if(textArea.value == 0 && num > 0 && textArea.value !== '0.'){
-    textArea.value = num;
-  }else{
- textArea.value = textArea.value + num;
-
-  }
+ textArea.value == 0 && num > 0 && textArea.value !== '0.' ? textArea.value = num : textArea.value = textArea.value + num;
 };
 
-function clearAll(){
+const clearAll = () => {
   textArea.value = 0;
 }
 
-function equalTo(){
+const equalTo = () => {
   var val = textArea.value;
   if(val){
     textArea.value = eval(val);
   }
 }
-function backSpace(){
+const backSpace = () => {
   var val = textArea.value;
   textArea.value = textArea.value.substring(0, val.length-1);
 }
 
-function percentCalculate(){
+const percentCalculate = () => {
     var val = textArea.value;
     if(val){
        textArea.value = eval(val)/100;
     }
-
 }
 
 button.forEach((btn) => btn.addEventListener('click', insert));
