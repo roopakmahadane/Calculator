@@ -2,53 +2,41 @@
 <html>
 <head>
   <title>Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <link rel="stylesheet" href="./styles/style.css">
   <script src="https://kit.fontawesome.com/0bc33df64b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="main">
-      <div class="textArea">
-        <form>
+      <div class="screeContainer">
           <input class="text" align="right" value=0  readonly>
-        </form>
-      <div/>
-      <div class="input" >
-        <table>
-          <tr>
-            <td><input type="button" class="button clear orange" value="C" ></td>
-            <td><button  class="button backspace gray"><i class="fas fa-backspace" id="fontawesome"></i></button></td>
-            <td><input type="button"  class = "percentage gray" value="%"></td>
-            <td><input type="button" class="button gray" value="/"></td>
+          <p class="answer"></p>
+      </div>
+      <div class="input">
+            <button class="button clear orangeBtn">C</button>
+            <button class="button backspace grayBtn"><i class="fas fa-backspace" id="fontawesome"></i></button>
+            <button class="button percentage">%</button>
+            <button class="button " value="/">/</button>
 
-          </tr>
-          <tr>
-            <td><input type="button" class="button digits" value="7" ></td>
-            <td><input type="button" class="button digits" value="8"></td>
-            <td><input type="button" class="button digits" value="9"></td>
-            <td><input type="button" class="button gray " value="x"></td>
-          </tr>
-          <tr>
-            <td><input type="button" class="button digits" value="4" ></td>
-            <td><input type="button" class="button digits" value="5"></td>
-            <td><input type="button" class="button digits" value="6"></td>
-            <td><input type="button" class="button gray " value="+"></td>
-          </tr>
-          <tr>
-            <td><input type="button" class="button digits"  value="1" ></td>
-            <td><input type="button" class="button digits" value="2"></td>
-            <td><input type="button" class="button digits" value="3"></td>
-            <td><input type="button" class="button gray " value="-"></td>
-          </tr>
-            <tr>
-            <td><input type="button" class = "button" value="" ></td>
-            <td><input type="button" class="button digits" value="0"></td>
-            <td><input type="button" class = "button" value="."></td>
-            <td><input type="button" class="equal orange" value="="></td>
-          </tr>
-        </table>
+            <button class="button" value="7">7</button>
+            <button class="button" value="8">8</button>
+            <button class="button" value="9">9</button>
+            <button class="button grayBtn" value="x">x</button>
 
+            <button class="button" value="4">4</button>
+            <button class="button" value="5">5</button>
+            <button class="button" value="6">6</button>
+            <button class="button grayBtn" value="+">+</button>
+
+            <button class="button" value="1">1</button>
+            <button class="button" value="2">2</button>
+            <button class="button" value="3">3</button>
+            <button class="button grayBtn" value="-">-</button>
+
+            <button class="button" value=""></button>
+            <button class="button" value="0">0</button>
+            <button class="button" value=".">.</button>
+            <button class="button equal orangeBtn">=</button>
         </div>
-    </div>
 
 
 

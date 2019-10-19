@@ -1,63 +1,67 @@
 
 
-body {
-  background: black;
-}
 
-.main{
-  position: absolute;
-  width:275px;
-  height: 535px;
-  left:37% ;
-  margin-top: 20px;
+
+* {
+  box-sizing: border-box;;
+  margin: 0;
 }
-.button, .equal, .percentage{
-  width: 68.75px;
-  height:50px;
-  padding:0;
-  margin: 0px;
-  display:block;
-  border:none;
-  cursor:pointer;
-  font-size:25px;
+body, html {
+  height: 100%;
   background-color: black;
-  color:white;
-  border-left: 1px solid #080808;
-  border-right: 1px solid #080808;
+}
 
-  border-bottom: 1px solid #101010;
+.screeContainer {
+  display: flex;
+  height: 40%;
+  border:none;
+  flex-direction: column;
+}
+
+.input {
+  font-size: 0;
+  width: 100%;
+  height: 60%;
+}
+.button {
+  width: 25%;
+  font-size: 4vh;
+  height: 20%;
+  cursor:pointer;
+  border:none;
   outline: none;
-}
-
-.text {
-  padding-top: 175px;
-  padding-bottom: 15px;
-  width:258px;
-  font-size: 60px;
-  text-align: justify;
-   text-align-last:right ;
-   border:1px solid #080808;
-   background-color: black;
+  background: black;
   color:white;
-  padding-right: 16px;
+  vertical-align: top;
+  border-right: 1px solid #080808;
+  border-bottom: 1px solid #101010;
+}
+.text {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  text-align: right;
+  font-size: 10vh;
+  padding-top: 20vh;
+  background: black;
+  border:none;
+  padding-right: 7vw;
+  outline:none;
+  color: white;
+}
+p {
+  color: #909090;
+  text-align: right;
+  font-size: 6vh;
+  padding-right: 7vw;
+
 }
 
-tr, td {
- padding: 0px;
- margin: 0px;
- }
-
-
-table {
- border-collapse: collapse;
- border-spacing: 0;
-}
-
-.orange {
+.orangeBtn {
   color: #e65c00;
 }
 
-
-.gray {
-  color: #909090;
+.grayBtn {
+  color:#909090 ;
 }
